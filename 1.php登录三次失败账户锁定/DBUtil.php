@@ -183,6 +183,8 @@ class DBUtil{
         $sets = rtrim($sets,',');
         $sql = "UPDATE {$table} SET {$sets}".self::parseWhere($where).self::parseOrder($order).self::parseLimit($limit);
         echo $sql;
+        self::execute($sql);
+
     }
     /**
      * 删除数据
