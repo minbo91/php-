@@ -13,7 +13,7 @@ int->"xsd:int"     float->"xsd:float"
 */
 $server->register ( 'GetTestStr', // 方法名
     //array ("name" => "xsd:string", "passwd" => "xsd:string", "email" => "xsd:string", "age" => "xsd:string"), // 参数，默认为 "xsd:string"
-    array ("name" => "xsd:string"), // 参数，默认为 "xsd:string"
+    array ("name" => "xsd:string","data"=>"xsd:string"), // 参数，默认为 "xsd:string"
     //array ("return" => "xsd:string" ) ); // 返回值，默认为 "xsd:string"
     array('return'=>'tns:entry_value')); // 返回值，默认为 "xsd:string"
 ;
@@ -71,14 +71,28 @@ $server->service ( $post_data );
  * 供调用的方法
  * @param $name
  */
-function GetTestStr($name) {
+function GetTestStr($name,$data) {
     //return "Hello, ".$name."!";
     //$data = ['name'=>get_name_value('name','minbo'),'age'=>get_name_value('age','20')];
+    //$name_value_list['user_name'] = get_name_value('user_name','minbo@qq.com');
+    //$name_value_list['user_age'] = get_name_value('user_age','20');
+    //示例报文
+    //<soapenv:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+    //   <soapenv:Header/>
+    //   <soapenv:Body>
+    //      <GetTestStr soapenv:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/">
+    //         <name xsi:type="xsd:string">name</name>
+    //         <data xsi:type="xsd:string"><![CDATA[<person><name>minbo</name><age>18</age></person>]]></data>
+    //      </GetTestStr>
+    //   </soapenv:Body>
+    //</soapenv:Envelope>
     $name_value_list = array();
-    $name_value_list['user_name'] = get_name_value('user_name','minbo@qq.com');
-    $name_value_list['user_age'] = get_name_value('user_age','20');
-    $data = "<person><code>S</code><msg>success!</msg></person>";
-    return ['code'=>'S','msg'=>'success','data'=>$data,'name_value_list'=>[]];
+    $data_str =  simplexml_load_string(str_ireplace('&', ' ', $data));
+    $data_arr = json_decode(json_encode($data_str), TRUE);
+    file_put_contents('01.txt',json_encode($data_arr).PHP_EOL,FILE_APPEND);
+
+    $resp_data = "";
+    return ['code'=>'S','msg'=>'success','data'=>$resp_data,'name_value_list'=>$name_value_list];
 }
  function get_name_value($field, $value)
 {

@@ -10,11 +10,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/service.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="377">
-              <caret line="80" column="71" selection-start-line="80" selection-start-column="56" selection-end-line="80" selection-end-column="71" />
+            <state relative-caret-position="352">
+              <caret line="82" column="59" selection-start-line="82" selection-start-column="59" selection-end-line="82" selection-end-column="59" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/01.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="31" selection-start-column="30" selection-end-column="31" />
             </state>
           </provider>
         </entry>
@@ -28,7 +37,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/nusoap.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-275">
@@ -90,8 +99,8 @@
         <option value="$PROJECT_DIR$/nusoapService.php" />
         <option value="$PROJECT_DIR$/nusoap/nusoap.php" />
         <option value="$PROJECT_DIR$/lib/nusoap.php" />
-        <option value="$PROJECT_DIR$/service.php" />
         <option value="$PROJECT_DIR$/01.txt" />
+        <option value="$PROJECT_DIR$/service.php" />
       </list>
     </option>
   </component>
@@ -101,8 +110,8 @@
     </servers>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="345" />
-    <option name="y" value="60" />
+    <option name="x" value="-10" />
+    <option name="y" value="-10" />
     <option name="width" value="1385" />
     <option name="height" value="745" />
   </component>
@@ -165,12 +174,12 @@
       <option name="presentableId" value="Default" />
       <updated>1589163987695</updated>
       <workItem from="1589163988897" duration="1888000" />
-      <workItem from="1589168243960" duration="9975000" />
+      <workItem from="1589168243960" duration="10815000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11863000" />
+    <option name="totallyTimeSpent" value="12703000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -320,16 +329,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/service.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="377">
-          <caret line="80" column="71" selection-start-line="80" selection-start-column="56" selection-end-line="80" selection-end-column="71" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/01.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/nusoap.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-275">
@@ -345,6 +344,20 @@
             <element signature="e#0#6#0" expanded="true" />
             <element signature="e#6#12#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/01.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="31" selection-start-column="30" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="82" column="59" selection-start-line="82" selection-start-column="59" selection-end-line="82" selection-end-column="59" />
         </state>
       </provider>
     </entry>
